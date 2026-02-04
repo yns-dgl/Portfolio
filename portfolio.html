@@ -2,6 +2,7 @@
 <html lang="fr">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio de Dagli Yunus</title>
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
@@ -11,214 +12,329 @@
 
     <header class="entete-fixe">
         <nav class="barre-navigation conteneur-principal">
-            
             <a href="#" class="logo">Dagli Yunus</a>
-            
             <ul class="liste-liens">
                 <li><a href="#accueil" class="lien-actif">Accueil</a></li>
-                <li><a href="#Projets">Projets</a></li>
+                <li><a href="#projets">Projets</a></li>
                 <li><a href="#competences">Compétences</a></li>
                 <li><a href="#a-propos">À Propos</a></li>
+                <li><a href="#parcours">Parcours</a></li>
+                <li><a href="#certifications">Certifications</a></li>   
                 <li><a href="mailto:dagli0607@gmail.com" class="bouton-contact">Me Contacter</a></li>
             </ul>
-
         </nav>
     </header>
 
     <main>
+
         <section id="accueil" class="section-presentation">
             <div class="conteneur-principal boite-flexible">
                 
                 <div class="colonne-texte">
                     <h1>Bonjour, je suis <span class="texte-colore">Dagli Yunus</span>.</h1>
-                    
                     <p class="metier">
                         Je suis<span id="zone-machine-a-ecrire"></span><span class="curseur-clignotant">|</span>
                     </p>
-                    
                     <p class="description">
                         Développeur Web Junior. Je crée des sites modernes et performants.
                     </p>
-                    
                     <div class="groupe-boutons">
                         <a href="mailto:dagli0607@gmail.com" class="bouton bouton-plein">
                             Me contacter
                         </a>
-                        <a href="Dagli Yunus.pdf" download class="bouton bouton-vide">
+                        <a href="ressource/Dagli Yunus.pdf" download class="bouton bouton-vide">
                             <i class="fas fa-file-download"></i> Mon CV
                         </a>
                     </div>
                 </div>
 
                 <div class="colonne-image">
-                    <img src="grey-geometrical-shapes-background_23-2148811539.avif" alt="Photo de Dagli Yunus">
+                    <img src="ressource/Image1.png" alt="Photo de Dagli Yunus">
                 </div>
 
             </div>
         </section>
-        <section id="Projets" class="section-projets">
+
+        <section id="projets" class="section-projets">
             <div class="conteneur-principal">
                 <h2>Mes Projets</h2>
                 <div class="grille-projets">
-                    <!-- Exemple de projet -->
+                    
                     <div class="carte-projet">
-                    <div class="image-projet-conteneur">
-                        <img src="https://via.placeholder.com/350x200" alt="Projet 1">
+                        <div class="image-projet-conteneur">
+                            <img src="Projets/Alex-Jhonson/png/_maquette-desktop.jpg" alt="Projet intégration St-Vincent">
+                        </div>
+                        <div class="info-projet">
+                            <h3>Site St-Vincent</h3>
+                            <p>Premier projet d'intégration HTML5/CSS3. Découverte du responsive et des flexbox.</p>
+                            <a href="/Projets/Alex-Jhonson/index.html" class="lien-projet">Voir le projet <i class="fas fa-arrow-right"></i></a>
+                        </div>
                     </div>
-                    <div class="info-projet">
-                        <h3>Site St-Vincent</h3>
-                        <p>Premier projet d'intégration HTML5/CSS3. Découverte du responsive et des flexbox.</p>
-                        <a href="#" class="lien-projet">Voir le projet <i class="fas fa-arrow-right"></i></a>
+
+                    <div class="carte-projet">
+                        <div class="image-projet-conteneur">
+                            <img src="https://via.placeholder.com/350x200" alt="Projet 2">
+                        </div>
+                        <div class="info-projet">
+                            <h3>Intégration Web Multipages</h3>
+                            <p>Création d'un site web multipages avec HTML5 et CSS3.</p>
+                            <a href="#" class="lien-projet">Voir le projet <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+
+                    <div class="carte-projet">
+                        <div class="image-projet-conteneur">
+                            <img src="ressource/portfolliov1.png" alt="Projet Portfolio v1">
+                        </div>
+                        <div class="info-projet">
+                            <h3>Portfolio v1</h3>
+                            <p>Conception de mon identité numérique et mise en ligne de mes compétences.</p>
+                            <a href="#" class="lien-projet">Voir le projet <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+
+                </div> 
+            </div>
+        </section>
+
+        <section id="competences" class="section-competences">
+            <div class="conteneur-principal">
+                <h2 class="titre-section">Mes Compétences</h2>
+                <div class="conteneur-skills">
+                    
+                    <div class="boite-skill">
+                        <i class="fas fa-code icone-skill"></i>
+                        <h3>Front-End</h3>
+                        <ul>
+                            <li>HTML5 / CSS3</li>
+                            <li>JavaScript (ES6+)</li>
+                            <li>Responsive Design</li>
+                        </ul>
+                    </div>
+
+                    <div class="boite-skill">
+                        <i class="fas fa-server icone-skill"></i>
+                        <h3>Back-End & BDD</h3>
+                        <ul>
+                            <li>PHP</li>
+                            <li>SQL</li>
+                            <li>Python</li>
+                            <li>C# POO</li>
+                        </ul>
+                    </div>
+
+                    <div class="boite-skill">
+                        <i class="fas fa-tools icone-skill"></i>
+                        <h3>Outils & SIO</h3>
+                        <ul>
+                            <li>Git / GitHub</li>
+                            <li>VS Code</li>
+                            <li>Figma (Maquettage)</li>
+                            <li>Méthode Agile</li>
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <section id="a-propos" class="section-apropos">
+            <div class="conteneur-principal boite-flexible">
+                <div class="colonne-image-apropos">
+                     <img src="ressource/Emmanuel_Macron_-_June_2025_(3x4_cropped).jpg" alt="À propos de moi">
+                </div>
+                <div class="colonne-texte-apropos">
+                    <h2 class="titre-section">À Propos de moi</h2>
+                    <p>
+                        Actuellement étudiant en <strong>BTS SIO</strong> (Services Informatiques aux Organisations) au lycée <strong>Saint-Vincent</strong>, je me spécialise dans le développement web et logiciel (Option SLAM).
+                    </p>
+                    <p>
+                        Passionné par les nouvelles technologies, j'aime résoudre des problèmes complexes et créer des interfaces utilisateurs intuitives. Mon objectif est de devenir un développeur Full-Stack accompli.
+                    </p>
+                    <div class="stats">
+                        <div>
+                            <span class="chiffre">1+</span>
+                            <span>Année d'étude</span>
+                        </div>
+                        <div>
+                            <span class="chiffre">5+</span>
+                            <span>Projets réalisés</span>
+                        </div>
                     </div>
                 </div>
+            </div>
+        </section>
 
-                <div class="carte-projet">
-                    <div class="image-projet-conteneur">
-                        <img src="https://via.placeholder.com/350x200" alt="Projet 2">
-                    </div>
-                    <div class="info-projet">
-                        <h3>Jeu JavaScript</h3>
-                        <p>Création d'un petit jeu interactif pour apprendre la logique algorithmique et le DOM.</p>
-                        <a href="#" class="lien-projet">Voir le projet <i class="fas fa-arrow-right"></i></a>
-                    </div>
-                </div>
-
-                <div class="carte-projet">
-                    <div class="image-projet-conteneur">
-                        <img src="https://via.placeholder.com/350x200" alt="Projet 3">
-                    </div>
-                    <div class="info-projet">
-                        <h3>Portfolio v1</h3>
-                        <p>Conception de mon identité numérique et mise en ligne de mes compétences.</p>
-                        <a href="#" class="lien-projet">Voir le projet <i class="fas fa-arrow-right"></i></a>
-                    </div>
-                </div>
-
-            </div> </div>
-    </section>
-
-    <section id="competences" class="section-competences">
-        <div class="conteneur-principal">
-            <h2 class="titre-section">Mes Compétences</h2>
-            <div class="conteneur-skills">
+        <section id="parcours" class="section-parcours">
+            <div class="conteneur-principal">
+                <h2 class="titre-section">Mon Apprentissage cette année</h2>
                 
-                <div class="boite-skill">
-                    <i class="fas fa-code icone-skill"></i>
-                    <h3>Front-End</h3>
-                    <ul>
-                        <li>HTML5 / CSS3</li>
-                        <li>JavaScript (ES6+)</li>
-                        <li>React / Vue (Initiation)</li>
-                        <li>Bootstrap / Tailwind</li>
-                    </ul>
-                </div>
-
-                <div class="boite-skill">
-                    <i class="fas fa-server icone-skill"></i>
-                    <h3>Back-End & BDD</h3>
-                    <ul>
-                        <li>PHP / Symfony</li>
-                        <li>MySQL / SQL</li>
-                        <li>Python</li>
-                        <li>Gestion API REST</li>
-                    </ul>
-                </div>
-
-                <div class="boite-skill">
-                    <i class="fas fa-tools icone-skill"></i>
-                    <h3>Outils & SIO</h3>
-                    <ul>
-                        <li>Git / GitHub</li>
-                        <li>VS Code</li>
-                        <li>Figma (Maquettage)</li>
-                        <li>Méthode Agile</li>
-                    </ul>
-                </div>
-
-            </div>
-        </div>
-    </section>
-
-    <section id="a-propos" class="section-apropos">
-        <div class="conteneur-principal boite-flexible">
-            <div class="colonne-image-apropos">
-                 <img src="https://via.placeholder.com/400" alt="À propos de moi">
-            </div>
-            <div class="colonne-texte-apropos">
-                <h2 class="titre-section">À Propos de moi</h2>
-                <p>
-                    Actuellement étudiant en <strong>BTS SIO</strong> (Services Informatiques aux Organisations) au lycée <strong>Saint-Vincent</strong>, je me spécialise dans le développement web et logiciel (Option SLAM).
-                </p>
-                <p>
-                    Passionné par les nouvelles technologies, j'aime résoudre des problèmes complexes et créer des interfaces utilisateurs intuitives. Mon objectif est de devenir un développeur Full-Stack accompli.
-                </p>
-                <div class="stats">
-                    <div>
-                        <span class="chiffre">1+</span>
-                        <span>Année d'étude</span>
+                <div class="timeline">
+                    
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-date">Septembre 2025</div>
+                        <div class="timeline-content">
+                            <h3>Intégration Web (HTML/CSS)</h3>
+                            <span class="etablissement">Les Fondamentaux</span>
+                            <p>
+                                Apprentissage de la structure des pages web (HTML5) et de la mise en forme (CSS3). 
+                                Découverte du Responsive Design (Media Queries) et de la mise en page moderne (Flexbox/Grid).
+                            </p>
+                        </div>
                     </div>
-                    <div>
-                        <span class="chiffre">5+</span>
-                        <span>Projets réalisés</span>
+
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-date">Octobre 2025</div>
+                        <div class="timeline-content">
+                            <h3>Algorithmique & Bases de Données</h3>
+                            <span class="etablissement">C# & SQL</span>
+                            <p>
+                                Développement d'applications lourdes (WinForms). 
+                                Apprentissage du langage SQL (Select, Join, CRUD) pour connecter nos applications à une base de données.
+                            </p>
+                        </div>
                     </div>
+
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-date">Novembre 2025</div>
+                        <div class="timeline-content">
+                            <h3>Interactivité Web (JS)</h3>
+                            <span class="etablissement">JavaScript</span>
+                            <p>
+                                Dynamisation des pages web. Manipulation du DOM, gestion des événements (clics, saisies) et logique algorithmique côté navigateur.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-date">Décembre 2025</div>
+                        <div class="timeline-content">
+                            <h3>Programmation Orientée Objet</h3>
+                            <span class="etablissement">C# Avancé</span>
+                            <p>
+                                Passage à la POO : création de Classes, notions d'Héritage, de Polymorphisme et d'Encapsulation pour structurer des projets plus complexes.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-date">Janvier 2026</div>
+                        <div class="timeline-content">
+                            <h3>PHP</h3>
+                            <span class="etablissement">Apprentissage des bases du PHP</span>
+                            <p>
+                                Introduction au langage PHP pour le développement web côté serveur. Gestion des formulaires, sessions et interactions avec une base de données MySQL. 
+                            </p>
+                        </div>
+                    </div>
+
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-</main>
+        <section id="certifications" class="section-certifications">
+            <div class="conteneur-principal">
+                <h2 class="titre-section">Mes Certifications</h2>
+                
+                <div class="grille-certifs">
+                    
+                    <div class="carte-certif">
+                        <div class="icone-certif">
+                            <i class="fas fa-book"></i>
+                        </div>
+                        <div class="info-certif">
+                            <h3>Projet Voltaire</h3>
+                            <span class="organisme">Éducation Nationale</span>
+                            <p>Certification reconnue validant la maîtrise de l'orthographe et de la qualité de l'expression écrite en contexte professionnel.</p>
+                            <span class="date-obtention"><i class="far fa-calendar-alt"></i> en cours</span>
+                        </div>
+                    </div>
 
-<footer>
-    <div class="conteneur-principal">
-        <div class="contenu-footer">
-            <div class="footer-info">
-                <h3>Dagli Yunus</h3>
-                <p>Étudiant BTS SIO - Développeur Web Junior</p>
+                    <div class="carte-certif">
+                        <div class="icone-certif">
+                            <i class="fas fa-shield"></i>
+                        </div>
+                        <div class="info-certif">
+                            <h3>SecNumAcadémie</h3>
+                            <span class="organisme">ANSSI</span>
+                            <p>Validation des compétences en sécurité des systèmes d'information (SSI) et hygiène numérique.</p>
+                            <span class="date-obtention"><i class="far fa-calendar-alt"></i> en cours</span>
+                        </div>
+                    </div>
+
+                    <div class="carte-certif">
+                        <div class="icone-certif">
+                            <i class="fas fa-laptop"></i>
+                        </div>
+                        <div class="info-certif">
+                            <h3>Certification Pix</h3>
+                            <span class="organisme">Service Public</span>
+                            <p>Évaluation et développement des compétences numériques.</p>
+                            <span class="date-obtention"><i class="far fa-calendar-alt"></i> En cours</span>
+                        </div>
+                    </div>
+
+                </div>
             </div>
-            <div class="footer-social">
-                <a href="#"><i class="fab fa-linkedin"></i></a>
-                <a href="#"><i class="fab fa-github"></i></a>
-                <a href="mailto:dagli0607@gmail.com"><i class="fas fa-envelope"></i></a>
-            </div>
-        </div>
-        <p class="copyright">&copy; 2026 Dagli Yunus. Tous droits réservés.</p>
-    </div>
-</footer>
-<!-- Script pour l'effet de machine à écrire -->
-<script>
-    const textElement = document.getElementById('zone-machine-a-ecrire');
-    const phrases = [" un Développeur Web.", " Étudiant en BTS SIO.", " un Passionné de Code."];
-    let phraseIndex = 0;
-    let charIndex = 0;
-    let isDeleting = false;
+        </section>
 
-    function typeEffect() {
-        const currentPhrase = phrases[phraseIndex];
-        
-        if (isDeleting) {
-            textElement.textContent = currentPhrase.substring(0, charIndex - 1);
-            charIndex--;
-        } else {
-            textElement.textContent = currentPhrase.substring(0, charIndex + 1);
-            charIndex++;
+    </main>
+
+    <footer>
+        <div class="conteneur-principal">
+            <div class="contenu-footer">
+                <div class="footer-info">
+                    <h3>Dagli Yunus</h3>
+                    <p>Étudiant BTS SIO - Développeur Web Junior</p>
+                </div>
+                <div class="footer-social">
+                    <a href="https://www.linkedin.com/in/yunus-dagli-a21b53310/"><i class="fab fa-linkedin"></i></a>
+                    <a href="https://github.com/yns-dgl"><i class="fab fa-github"></i></a>
+                    <a href="mailto:dagli0607@gmail.com"><i class="fas fa-envelope"></i></a>
+                </div>
+            </div>
+            <p class="copyright">&copy; 2026 Dagli Yunus. Tous droits réservés.</p>
+        </div>
+    </footer>
+
+    <script>
+        const textElement = document.getElementById('zone-machine-a-ecrire');
+        const phrases = [" un Développeur Web.", " Étudiant en BTS SIO.", " un Passionné de Code."];
+        let phraseIndex = 0;
+        let charIndex = 0;
+        let isDeleting = false;
+
+        function typeEffect() {
+            const currentPhrase = phrases[phraseIndex];
+            
+            if (isDeleting) {
+                textElement.textContent = currentPhrase.substring(0, charIndex - 1);
+                charIndex--;
+            } else {
+                textElement.textContent = currentPhrase.substring(0, charIndex + 1);
+                charIndex++;
+            }
+
+            let typeSpeed = isDeleting ? 50 : 100;
+
+            if (!isDeleting && charIndex === currentPhrase.length) {
+                typeSpeed = 2000;
+                isDeleting = true;
+            } else if (isDeleting && charIndex === 0) {
+                isDeleting = false;
+                phraseIndex = (phraseIndex + 1) % phrases.length;
+                typeSpeed = 500;
+            }
+
+            setTimeout(typeEffect, typeSpeed);
         }
 
-        let typeSpeed = isDeleting ? 50 : 100;
-
-        if (!isDeleting && charIndex === currentPhrase.length) {
-            typeSpeed = 2000;
-            isDeleting = true;
-        } else if (isDeleting && charIndex === 0) {
-            isDeleting = false;
-            phraseIndex = (phraseIndex + 1) % phrases.length;
-            typeSpeed = 500;
-        }
-
-        setTimeout(typeEffect, typeSpeed);
-    }
-
-    document.addEventListener('DOMContentLoaded', typeEffect);
-</script>
+        document.addEventListener('DOMContentLoaded', typeEffect);
+    </script>
 
 </body>
 </html>

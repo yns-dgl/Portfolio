@@ -372,3 +372,147 @@ footer {
     font-size: 0.9rem;
     color: #bdc3c7;
 }
+/* ============ SECTION PARCOURS (TIMELINE) ============ */
+.section-parcours {
+    padding: 80px 0;
+    background-color: #fff;
+}
+
+.timeline {
+    position: relative;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* La ligne verticale */
+.timeline::after {
+    content: '';
+    position: absolute;
+    width: 4px;
+    background-color: #eee;
+    top: 0;
+    bottom: 0;
+    left: 20px; /* Position de la ligne */
+    margin-left: -2px;
+}
+
+.timeline-item {
+    position: relative;
+    padding-left: 60px; /* Espace pour la ligne et les points */
+    margin-bottom: 50px;
+}
+
+/* Le point sur la ligne */
+.timeline-dot {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background-color: var(--blanc);
+    border: 4px solid var(--bleu-principal);
+    border-radius: 50%;
+    left: 11px; /* Centrer sur la ligne */
+    top: 0;
+    z-index: 1;
+}
+
+.timeline-date {
+    font-weight: 700;
+    color: var(--bleu-principal);
+    margin-bottom: 10px;
+    display: inline-block;
+    background: #eaf6ff;
+    padding: 4px 12px;
+    border-radius: 20px;
+    font-size: 0.9rem;
+}
+
+.timeline-content {
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+    border-left: 4px solid var(--bleu-principal);
+}
+
+.timeline-content h3 {
+    margin-bottom: 5px;
+    font-size: 1.2rem;
+}
+
+.etablissement {
+    display: block;
+    color: #888;
+    font-style: italic;
+    margin-bottom: 15px;
+    font-size: 0.95rem;
+}
+
+/* ============ SECTION CERTIFICATIONS ============ */
+.section-certifications {
+    padding: 80px 0;
+    background-color: #f9f9f9;
+}
+
+.grille-certifs {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+}
+
+.carte-certif {
+    background: var(--blanc);
+    padding: 2rem;
+    border-radius: 15px;
+    display: flex;
+    align-items: flex-start;
+    gap: 1.5rem;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+    border: 1px solid transparent;
+    transition: 0.3s;
+}
+
+.carte-certif:hover {
+    border-color: var(--bleu-principal);
+    transform: translateY(-5px);
+}
+
+.icone-certif {
+    background-color: #eaf6ff;
+    color: var(--bleu-principal);
+    width: 60px;
+    height: 60px;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    flex-shrink: 0; /* Empêche l'icône de s'écraser */
+}
+
+.info-certif h3 {
+    font-size: 1.1rem;
+    margin-bottom: 0.2rem;
+}
+
+.organisme {
+    font-size: 0.85rem;
+    text-transform: uppercase;
+    color: #999;
+    font-weight: 600;
+    letter-spacing: 1px;
+    display: block;
+    margin-bottom: 0.8rem;
+}
+
+.info-certif p {
+    font-size: 0.9rem;
+    color: var(--gris-texte);
+    margin-bottom: 1rem;
+    line-height: 1.4;
+}
+
+.date-obtention {
+    font-size: 0.8rem;
+    color: var(--bleu-principal);
+    font-weight: 500;
+}
