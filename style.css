@@ -66,7 +66,7 @@ ul { list-style: none; }
     background: var(--bleu-principal);
     color: white !important;
     padding: 0.5rem 1.2rem;
-    border-radius: 5px;
+    border-radius: 50px;
 }
 
 /* ============ SECTION PRÉSENTATION ============ */
@@ -119,7 +119,7 @@ ul { list-style: none; }
 
 .bouton {
     padding: 0.9rem 2rem;
-    border-radius: 5px;
+    border-radius: 50px;
     font-weight: 600;
     display: inline-flex;
     align-items: center;
@@ -174,3 +174,201 @@ ul { list-style: none; }
     animation: clignote 1s infinite;
 }
 @keyframes clignote { 50% { opacity: 0; } }
+.section-projets {
+    padding: 100px 0;
+    background-color: #f9f9f9;
+}
+
+.section-projets h2 {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 3rem;
+    color: var(--gris-fonce);
+}
+
+.grille-projets {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 colonnes */
+    gap: 2rem;
+}
+
+.carte-projet {
+    background: var(--blanc);
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+    transition: transform 0.3s ease;
+}
+
+.carte-projet:hover {
+    transform: translateY(-10px);
+}
+
+.image-projet-conteneur img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.info-projet {
+    padding: 1.5rem;
+}
+
+.info-projet h3 {
+    margin-bottom: 0.5rem;
+    color: var(--gris-fonce);
+}
+
+.info-projet p {
+    color: var(--gris-texte);
+    font-size: 0.9rem;
+    margin-bottom: 1rem;
+    line-height: 1.5;
+}
+
+.lien-projet {
+    color: var(--bleu-principal);
+    font-weight: 600;
+    font-size: 0.9rem;
+}
+.lien-projet:hover {
+    text-decoration: underline;
+}
+
+/* ============ SECTION COMPÉTENCES ============ */
+.section-competences {
+    padding: 100px 0;
+    background-color: var(--blanc);
+}
+
+.titre-section {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 4rem;
+}
+
+.conteneur-skills {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+}
+
+.boite-skill {
+    flex: 1;
+    background: var(--blanc);
+    border: 1px solid #eee;
+    padding: 2rem;
+    border-radius: 15px;
+    text-align: center;
+    transition: 0.3s;
+    min-width: 250px;
+}
+
+.boite-skill:hover {
+    border-color: var(--bleu-principal);
+    box-shadow: 0 10px 30px rgba(52, 152, 219, 0.15);
+}
+
+.icone-skill {
+    font-size: 3rem;
+    color: var(--bleu-principal);
+    margin-bottom: 1rem;
+}
+
+.boite-skill h3 {
+    margin-bottom: 1.5rem;
+    font-size: 1.2rem;
+}
+
+.boite-skill ul li {
+    margin-bottom: 0.8rem;
+    color: var(--gris-texte);
+}
+
+/* ============ SECTION À PROPOS ============ */
+.section-apropos {
+    padding: 100px 0;
+    background-color: #f0f4f8;
+}
+
+.colonne-image-apropos img {
+    width: 350px;
+    border-radius: 20px;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+}
+
+.colonne-texte-apropos {
+    flex: 1;
+    padding-left: 3rem;
+}
+
+.colonne-texte-apropos p {
+    margin-bottom: 1.5rem;
+    line-height: 1.8;
+    color: var(--gris-texte);
+}
+
+.stats {
+    display: flex;
+    gap: 3rem;
+    margin-top: 2rem;
+}
+
+.stats div {
+    display: flex;
+    flex-direction: column;
+}
+
+.chiffre {
+    font-size: 2rem;
+    font-weight: 700;
+    color: var(--bleu-principal);
+}
+
+/* ============ FOOTER ============ */
+footer {
+    background-color: var(--gris-fonce);
+    color: var(--blanc);
+    padding: 3rem 0;
+}
+
+.contenu-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+
+.footer-info h3 {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.footer-info p {
+    color: #bdc3c7;
+}
+
+.footer-social {
+    display: flex;
+    gap: 1.5rem;
+}
+
+.footer-social a {
+    color: var(--blanc);
+    font-size: 1.5rem;
+    transition: 0.3s;
+}
+
+.footer-social a:hover {
+    color: var(--bleu-principal);
+    transform: scale(1.1);
+}
+
+.copyright {
+    text-align: center;
+    border-top: 1px solid rgba(255,255,255,0.1);
+    padding-top: 1.5rem;
+    font-size: 0.9rem;
+    color: #bdc3c7;
+}
